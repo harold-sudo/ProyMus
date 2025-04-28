@@ -1,9 +1,9 @@
-// // ---- Menú ----
-// const menuToggle = document.querySelector('.menu-toggle');
-// const menu = document.querySelector('.menu');
-// menuToggle.addEventListener('click', () => {
-//     menu.classList.toggle('show');
-// });
+// ---- Menú ----
+const menuToggle = document.querySelector('.menu-toggle');
+const menu = document.querySelector('.menu');
+menuToggle.addEventListener('click', () => {
+    menu.classList.toggle('show');
+});
 // // ---- Carrusel de imágenes principal ----
 // const slides = document.querySelectorAll('.hero-slider .slide');
 // let currentSlide = 0;
