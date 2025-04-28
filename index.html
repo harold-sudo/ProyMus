@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Melody: Historia y exploración de la música a través del tiempo.">
+    <title>Melody - Historia de la Música</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">MELODY</div>
+        <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+        <nav class="menu">
+            <a href="#generos">GÉNEROS</a>
+            <a href="#sobre-nosotros">SOBRE NOSOTROS</a>
+            <a href="#contacto">CONTACTO</a>
+        </nav>
+    </header>
+
+    <section class="hero-slider">
+        <div class="slide active" style="background-image: url('img/music-notes-3221097_1280.jpg');">
+            <div class="slide-content">
+                <h1>Explora la historia de la Música</h1>
+                <p>Desde sus orígenes hasta los días modernos.</p>
+            </div>
+        </div>
+        <div class="slide" style="background-image: url('img/SONIDOS.jpg');">
+            <div class="slide-content">
+                <h1>Sumérgete en los sonidos</h1>
+                <p>De las culturas más diversas del mundo.</p>
+            </div>
+        </div>
+        <div class="slide" style="background-image: url('img/generos-musicales.jpg');">
+            <div class="slide-content">
+                <h1>Conoce los grandes géneros</h1>
+                <p>Jazz, Rock, Pop, Clásica y más.</p>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <section id="generos" class="contenedor-generos">
+            <h2>GÉNEROS MUSICALES</h2>
+            <div class="generos-carrusel">
+                <button class="genero-prev">&#10094;</button>
+                <div class="genero-slide active">
+                    <div class="genero-texto">
+                        <h3>Rock</h3>
+                        <p>El rock fusiona energía, rebeldía y guitarras eléctricas desde los años 50.</p>
+                    </div>
+                    <div class="genero-imagen">
+                        <img src="img/OIP.jpg" alt="Rock">
+                    </div>
+                </div>
+                <div class="genero-slide">
+                    <div class="genero-texto">
+                        <h3>Jazz</h3>
+                        <p>Originado en Nueva Orleans, el jazz combina libertad, improvisación y ritmo sincopado.</p>
+                    </div>
+                    <div class="genero-imagen">
+                        <img src="img/jazz-icon-creative-design-80079934.jpg" alt="Jazz">
+                    </div>
+                </div>
+                <div class="genero-slide">
+                    <div class="genero-texto">
+                        <h3>Pop</h3>
+                        <p>Con melodías pegajosas, el pop domina las listas de éxitos globales desde los años 60.</p>
+                    </div>
+                    <div class="genero-imagen">
+                        <img src="img/mejor+musica+pop-1920w.jpg" alt="Pop">
+                    </div>
+                </div>
+                <div class="genero-slide">
+                    <div class="genero-texto">
+                        <h3>Clásica</h3>
+                        <p>Composiciones eternas que abarcan siglos de arte musical, desde Bach hasta Beethoven.</p>
+                    </div>
+                    <div class="genero-imagen">
+                        <img src="img/7032cbe163889e2f146c6e8af3542721.jpg" alt="Clásica">
+                    </div>
+                </div>
+                <button class="genero-next">&#10095;</button>
+            </div>
+        </section>
+
+        <section id="sobre-nosotros" class="contenedor-horizontal">
+            <div class="imagen">
+                <img src="img/OIP (1).jpg" alt="Historia de la música">
+            </div>
+            <div class="texto">
+                <h1>SONGS FROM HEART</h1>
+                <p>Sumérgete en un viaje musical sin fronteras. Explora la diversidad de géneros que han dado forma a la cultura mundial.</p>
+            </div>
+        </section>
+
+        <section id="contacto" class="contenedor-horizontal">
+            <div class="texto">
+                <h2>CONTÁCTANOS</h2>
+                <p>¿Tienes sugerencias o preguntas? Escríbenos y serás parte de Melody.</p>
+                <button>ESCRÍBENOS</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        © 2025 Melody. Todos los derechos reservados.
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
