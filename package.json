@@ -1,0 +1,16 @@
+{
+  "name": "proyectounidad2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:sass": "sass --watch src/scss/main.scss dist/css/main.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.98.0"
+  }
+}
