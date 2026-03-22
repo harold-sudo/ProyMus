@@ -3,122 +3,199 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Melody: Historia y exploración de la música a través del tiempo.">
-    <title>Melody - Historia de la Música</title>
+    <meta name="description" content="SportShop: tienda deportiva multimarca con accesorios, ropa y calzado para entrenar al maximo.">
+    <title>Sport Shop</title>
     <link rel="stylesheet" href="/dist/css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <div class="logo">MELODY</div>
+        <div class="logo">SportShop</div>
         <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
         <nav class="menu">
-            <a href="#generos">GÉNEROS</a>
+            <a href="#generos">CATEGORIAS</a>
+            <a href="#destacados">DESTACADOS</a>
             <a href="#sobre-nosotros">SOBRE NOSOTROS</a>
             <a href="#contacto">CONTACTO</a>
-            <a href="#newImg">IMÁGENES</a>
+            <a href="#newImg">MARCAS</a>
         </nav>
     </header>
 
     <section class="hero-slider">
-        <div class="slide active" style="background-image: url('img/music-notes-3221097_1280.jpg');">
+        <!-- TODO: Reemplaza con imagen principal de portada (recomendado 1920x1080) -->
+        <div class="slide active" style="background-image: url('/img/grupo-de-personas-deportivas-1.jpg');">
             <div class="slide-content">
-                <h1>Explora la historia de la Música</h1>
-                <p>Desde sus orígenes hasta los días modernos.</p>
+                <h1>Vive el deporte con toda marca</h1>
+                <p>Encuentra accesorios, ropa y calzado para cada disciplina.</p>
             </div>
         </div>
-        <div class="slide" style="background-image: url('img/SONIDOS.jpg');">
+        <!-- TODO: Reemplaza con imagen secundaria de portada (entrenamiento/gimnasio) -->
+        <div class="slide" style="background-image: url('/img/fitness-lifestyle-young-couple.jpg');">
             <div class="slide-content">
-                <h1>Sumérgete en los sonidos</h1>
-                <p>De las culturas más diversas del mundo.</p>
+                <h1>Entrena como un profesional</h1>
+                <p>Equipamiento oficial para futbol, running, gym y outdoor.</p>
             </div>
         </div>
-        <div class="slide" style="background-image: url('img/generos-musicales.jpg');">
+        <!-- TODO: Reemplaza con imagen terciaria de portada (equipamiento deportivo) -->
+        <div class="slide" style="background-image: url('/img/grupo-haciendo-deporte.jpg');">
             <div class="slide-content">
-                <h1>Conoce los grandes géneros</h1>
-                <p>Jazz, Rock, Pop, Clásica y más.</p>
+                <h1>Rinde mas en cada sesion</h1>
+                <p>Material tecnico, tecnologia deportiva y asesoria personalizada.</p>
             </div>
         </div>
     </section>
 
     <main>
         <section id="generos" class="contenedor-generos">
-            <h2>GÉNEROS MUSICALES</h2>
+            <h2>CATEGORIAS DESTACADAS</h2>
             <div class="generos-carrusel">
                 <button class="genero-prev">&#10094;</button>
                 <div class="genero-slide active">
                     <div class="genero-texto">
-                        <h3>Rock</h3>
-                        <p>El rock fusiona energía, rebeldía y guitarras eléctricas desde los años 50.</p>
+                        <h3>Running</h3>
+                        <p>Tenis ligeros, calcetines tecnicos, botellas termicas y accesorios para correr mejor cada kilometro.</p>
                     </div>
                     <div class="genero-imagen">
-                        <img src="img/OIP.jpg" alt="Rock">
+                        <!-- TODO: Reemplaza con imagen de categoria Running -->
+                        <img src="img/OIP.jpg" alt="Productos de running">
                     </div>
                 </div>
                 <div class="genero-slide">
                     <div class="genero-texto">
-                        <h3>Jazz</h3>
-                        <p>Originado en Nueva Orleans, el jazz combina libertad, improvisación y ritmo sincopado.</p>
+                        <h3>Training & Gym</h3>
+                        <p>Guantes, bandas elasticas, tops deportivos y shorts de alto rendimiento para tus rutinas diarias.</p>
                     </div>
                     <div class="genero-imagen">
-                        <img src="img/jazz-icon-creative-design-80079934.jpg" alt="Jazz">
+                        <!-- TODO: Reemplaza con imagen de categoria Training & Gym -->
+                        <img src="img/jazz-icon-creative-design-80079934.jpg" alt="Accesorios para gimnasio">
                     </div>
                 </div>
                 <div class="genero-slide">
                     <div class="genero-texto">
-                        <h3>Pop</h3>
-                        <p>Con melodías pegajosas, el pop domina las listas de éxitos globales desde los años 60.</p>
+                        <h3>Futbol</h3>
+                        <p>Tachones, espinilleras, balones y uniformes oficiales para que juegues con total confianza.</p>
                     </div>
                     <div class="genero-imagen">
-                        <img src="img/mejor+musica+pop-1920w.jpg" alt="Pop">
+                        <!-- TODO: Reemplaza con imagen de categoria Futbol -->
+                        <img src="img/mejor+musica+pop-1920w.jpg" alt="Ropa y calzado de futbol">
                     </div>
                 </div>
                 <div class="genero-slide">
                     <div class="genero-texto">
-                        <h3>Clásica</h3>
-                        <p>Composiciones eternas que abarcan siglos de arte musical, desde Bach hasta Beethoven.</p>
+                        <h3>Outdoor</h3>
+                        <p>Chamarras impermeables, mochilas y ropa termica para aventura, senderismo y clima extremo.</p>
                     </div>
                     <div class="genero-imagen">
-                        <img src="img/7032cbe163889e2f146c6e8af3542721.jpg" alt="Clásica">
+                        <!-- TODO: Reemplaza con imagen de categoria Outdoor -->
+                        <img src="img/7032cbe163889e2f146c6e8af3542721.jpg" alt="Equipamiento outdoor">
                     </div>
                 </div>
                 <button class="genero-next">&#10095;</button>
             </div>
         </section>
 
+        <section id="destacados" class="contenedor-productos">
+            <h2>PRODUCTOS MAS DESTACADOS</h2>
+            <div class="productos-grid">
+                <article class="producto-card">
+                    <!-- TODO: Reemplaza con imagen del producto Tenis Running Pro -->
+                    <img src="img/c718b5d52d27ff5da404e23f4ea4bec2.jpg" alt="Tenis de running">
+                    <h3>Tenis Running Pro</h3>
+                    <p>Amortiguacion reactiva y capellada transpirable para entrenamientos intensos.</p>
+                    <span class="precio">$89.99</span>
+                    <button>Ver producto</button>
+                </article>
+                <article class="producto-card">
+                    <!-- TODO: Reemplaza con imagen del producto Set Fitness Active -->
+                    <img src="img/da4c24090678de7ad141e341507a3bc3.jpg" alt="Conjunto deportivo mujer">
+                    <h3>Set Fitness Active</h3>
+                    <p>Conjunto elastico de secado rapido ideal para gym, yoga y entrenamiento funcional.</p>
+                    <span class="precio">$59.99</span>
+                    <button>Ver producto</button>
+                </article>
+                <article class="producto-card">
+                    <!-- TODO: Reemplaza con imagen del producto Balon Match Elite -->
+                    <img src="img/Arctic-Monkeys-logo.png" alt="Balon profesional de futbol">
+                    <h3>Balon Match Elite</h3>
+                    <p>Superficie texturizada con alta durabilidad para partidos y entrenamientos competitivos.</p>
+                    <span class="precio">$39.99</span>
+                    <button>Ver producto</button>
+                </article>
+                <article class="producto-card">
+                    <!-- TODO: Reemplaza con imagen del producto Mochila Sport 35L -->
+                    <img src="img/STCL003_4x3__22971.jpg" alt="Mochila deportiva">
+                    <h3>Mochila Sport 35L</h3>
+                    <p>Compartimentos inteligentes para tenis, hidratacion y accesorios de alto rendimiento.</p>
+                    <span class="precio">$49.99</span>
+                    <button>Ver producto</button>
+                </article>
+            </div>
+        </section>
+
         <section id="sobre-nosotros" class="contenedor-horizontal">
             <div class="imagen">
-                <img src="img/OIP (1).jpg" alt="Historia de la música">
+                <!-- TODO: Reemplaza con imagen institucional de la marca -->
+                <img src="img/OIP (1).jpg" alt="Historia de la marca deportiva">
             </div>
             <div class="texto">
-                <h1>SONGS FROM HEART</h1>
-                <p>Sumérgete en un viaje musical sin fronteras. Explora la diversidad de géneros que han dado forma a la cultura mundial.</p>
+                <h1>SPORTSHOP MULTIMARCA</h1>
+                <p>Somos una tienda especializada en accesorios y ropa deportiva con seleccion de marcas internacionales y nacionales.</p>
+                <p>Te ayudamos a elegir equipamiento segun tu nivel, objetivo y disciplina para que compitas o entrenes con comodidad y estilo.</p>
             </div>
         </section>
 
         <section id="contacto" class="contenedor-horizontal">
             <div class="texto">
                 <h2>CONTÁCTANOS</h2>
-                <p>¿Tienes sugerencias o preguntas? Escríbenos y serás parte de Melody.</p>
-                <button>ESCRÍBENOS</button>
+                <p>¿Necesitas ayuda para elegir talla, marca o tipo de producto? Nuestro equipo te asesora en cada compra.</p>
+                <p>Atencion personalizada por WhatsApp, correo y redes sociales.</p>
+                <button>ESCRIBENOS</button>
             </div>
         </section>
+
         <section id="newImg" class="contenedor-horizontal">
             <div class="texto">
-                <h2>IMÁGENES</h2>
+                <h2>MARCAS DISPONIBLES</h2>
+                <p>Trabajamos con marcas reconocidas para garantizar tecnologia, calidad y durabilidad en cada producto.</p>
                 <div class="imagen">
-                    <img src="img/c718b5d52d27ff5da404e23f4ea4bec2.jpg" alt="Banda, 5SOS">
-                    <img src="img/da4c24090678de7ad141e341507a3bc3.jpg" alt="Banda, The Neighbourhood">
-                    <img src="img/Arctic-Monkeys-logo.png" alt="Banda, Arctic Monkeys">
-                    <img src="img/STCL003_4x3__22971.jpg" alt="Banda, The Strokes">
+                    <!-- TODO: Reemplaza con logos o imagenes de marcas deportivas -->
+                    <img src="img/c718b5d52d27ff5da404e23f4ea4bec2.jpg" alt="Marca deportiva 1">
+                    <img src="img/da4c24090678de7ad141e341507a3bc3.jpg" alt="Marca deportiva 2">
+                    <img src="img/Arctic-Monkeys-logo.png" alt="Marca deportiva 3">
+                    <img src="img/STCL003_4x3__22971.jpg" alt="Marca deportiva 4">
                 </div>
             </div>
+        </section>
     </main>
 
     <footer>
-        © 2025 Melody. Todos los derechos reservados.
+        <div class="footer-grid">
+            <div>
+                <h3>SportShop</h3>
+                <p>Inspiramos tu rendimiento con productos deportivos de calidad para cada etapa de tu entrenamiento.</p>
+            </div>
+            <div>
+                <h3>Contacto</h3>
+                <p>Telefono: +57 300 000 0000</p>
+                <p>Email: hola@sportshop.com</p>
+                <p>Direccion: Av. Deportiva 123, Bogota</p>
+            </div>
+            <div>
+                <h3>Atencion</h3>
+                <p>Lunes a viernes: 9:00 AM - 7:00 PM</p>
+                <p>Sabados: 10:00 AM - 5:00 PM</p>
+                <p>Envios nacionales en 24 a 72 horas.</p>
+            </div>
+            <div>
+                <h3>Enlaces</h3>
+                <p><a href="#generos">Categorias</a></p>
+                <p><a href="#destacados">Productos destacados</a></p>
+                <p><a href="#contacto">Soporte y contacto</a></p>
+            </div>
+        </div>
+        <div class="footer-copy">© 2026 SportShop. Todos los derechos reservados.</div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
