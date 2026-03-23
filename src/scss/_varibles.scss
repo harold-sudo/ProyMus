@@ -1,0 +1,70 @@
+// ========================================
+// BREAKPOINTS - Mobile / Tablet / Desktop
+// ========================================
+$breakpoint-mobile: 576px;   // Celulares pequeños y medianos
+$breakpoint-tablet: 768px;   // Tablets y dispositivos medianos
+$breakpoint-desktop: 1024px; // Laptops y pantallas grandes
+
+// Mixins para media queries más limpios
+@mixin responsive-mobile {
+    @media (max-width: $breakpoint-mobile) {
+        @content;
+    }
+}
+
+@mixin responsive-tablet {
+    @media (max-width: $breakpoint-tablet) {
+        @content;
+    }
+}
+
+@mixin responsive-desktop {
+    @media (min-width: $breakpoint-desktop) {
+        @content;
+    }
+}
+
+// ========================================
+// COLORES
+// ========================================
+$color-bg-dark: #000;
+$color-text-light: #fff;
+$color-text-dark: #141414;
+$color-muted: #d6d6d6;
+$color-muted-dark: #444;
+$color-surface: #f7f7f7;
+$color-surface-card: #fff;
+$color-primary: #111;
+$color-primary-hover: #2b2b2b;
+$color-error: #b12020;
+$color-success: #1f6d28;
+
+// ========================================
+// TAMAÑOS DE FUENTES RESPONSIVOS
+// ========================================
+$font-size-h1-desktop: 3rem;    // Hero principal
+$font-size-h1-tablet: 2.5rem;
+$font-size-h1-mobile: 1.8rem;
+
+$font-size-h2-desktop: 2.4rem;  // Títulos de sección
+$font-size-h2-tablet: 2rem;
+$font-size-h2-mobile: 1.6rem;
+
+$font-size-h3-desktop: 1.5rem;  // Subtítulos
+$font-size-h3-tablet: 1.3rem;
+$font-size-h3-mobile: 1.1rem;
+
+$font-size-body-desktop: 1rem;
+$font-size-body-tablet: 0.95rem;
+$font-size-body-mobile: 0.9rem;
+
+// ========================================
+// ESPACIADOS RESPONSIVOS
+// ========================================
+$padding-section-desktop: 4rem 2rem;
+$padding-section-tablet: 3rem 1.5rem;
+$padding-section-mobile: 2rem 1rem;
+
+$gap-grid-desktop: 1.5rem;
+$gap-grid-tablet: 1.25rem;
+$gap-grid-mobile: 1rem;

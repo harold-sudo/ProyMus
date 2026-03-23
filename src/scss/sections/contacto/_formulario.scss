@@ -1,0 +1,168 @@
+@use "../../varibles" as *;
+
+.contact-section {
+    background: $color-surface;
+    color: #151515;
+    padding: $padding-section-desktop;
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 1.5rem;
+    width: min(1150px, 100%);
+    margin: 0 auto;
+
+    @include responsive-tablet {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: $padding-section-tablet;
+    }
+
+    @include responsive-mobile {
+        gap: 0.8rem;
+        padding: $padding-section-mobile;
+    }
+}
+
+.contact-form-card,
+.contact-info-card {
+    background: $color-surface-card;
+    border-radius: 14px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.09);
+    padding: 1.5rem;
+
+    @include responsive-tablet {
+        padding: 1.2rem;
+    }
+
+    @include responsive-mobile {
+        padding: 1rem;
+    }
+}
+
+.contact-form-card h2,
+.contact-info-card h3 {
+    font-size: $font-size-h2-desktop;
+    margin-bottom: 0.6rem;
+
+    @include responsive-tablet {
+        font-size: $font-size-h2-tablet;
+        margin-bottom: 0.5rem;
+    }
+
+    @include responsive-mobile {
+        font-size: $font-size-h2-mobile;
+    }
+}
+
+.contact-form-card p,
+.contact-info-card p {
+    line-height: 1.6;
+    color: $color-muted-dark;
+    margin-bottom: 0.7rem;
+    font-size: $font-size-body-desktop;
+
+    @include responsive-tablet {
+        font-size: $font-size-body-tablet;
+    }
+
+    @include responsive-mobile {
+        font-size: $font-size-body-mobile;
+    }
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.9rem;
+}
+
+.input-group label {
+    font-weight: 600;
+    margin-bottom: 0.35rem;
+    font-size: $font-size-body-desktop;
+
+    @include responsive-mobile {
+        font-size: $font-size-body-mobile;
+    }
+}
+
+.input-group input,
+.input-group select,
+.input-group textarea {
+    border: 1px solid #cacaca;
+    border-radius: 10px;
+    padding: 0.7rem 0.8rem;
+    font-size: 0.95rem;
+    min-height: 44px;
+    font-family: inherit;
+
+    @include responsive-mobile {
+        padding: 0.65rem 0.75rem;
+        font-size: 1rem;
+    }
+}
+
+.input-group input:focus,
+.input-group select:focus,
+.input-group textarea:focus {
+    border-color: #222;
+    outline: none;
+}
+
+.input-group small {
+    font-size: 0.78rem;
+    color: #666;
+    margin-top: 0.2rem;
+}
+
+.is-invalid {
+    border-color: $color-error !important;
+    background: #fff0f0;
+}
+
+.form-feedback {
+    margin-top: 0.9rem;
+    font-weight: 600;
+    min-height: 1.2rem;
+    font-size: $font-size-body-desktop;
+
+    @include responsive-mobile {
+        font-size: $font-size-body-mobile;
+    }
+}
+
+.form-feedback.error {
+    color: $color-error;
+}
+
+.form-feedback.success {
+    color: $color-success;
+}
+
+.map-card {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px dashed #ccc;
+}
+
+.map-placeholder {
+    margin-top: 0.6rem;
+    border-radius: 10px;
+    min-height: 180px;
+    display: grid;
+    place-items: center;
+    background: repeating-linear-gradient(45deg, #d9d9d9 0 10px, #ececec 10px 20px);
+    color: #2e2e2e;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: $font-size-body-desktop;
+
+    @include responsive-tablet {
+        min-height: 150px;
+        font-size: $font-size-body-tablet;
+    }
+
+    @include responsive-mobile {
+        min-height: 120px;
+        font-size: $font-size-body-mobile;
+    }
+}

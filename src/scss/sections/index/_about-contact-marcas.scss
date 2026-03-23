@@ -1,0 +1,138 @@
+@use "../../varibles" as *;
+
+/* Sobre nosotros, contacto home y marcas */
+.contenedor-horizontal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: $padding-section-desktop;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    margin: 2rem;
+    min-height: 100vh;
+
+    @include responsive-tablet {
+        gap: 1.5rem;
+        padding: $padding-section-tablet;
+        min-height: auto;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    @include responsive-mobile {
+        gap: 1rem;
+        padding: $padding-section-mobile;
+        margin: 1rem;
+    }
+}
+
+.contenedor-horizontal .imagen img {
+    width: 100%;
+    max-width: 500px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+
+    @include responsive-tablet {
+        max-width: 350px;
+        height: 280px;
+    }
+
+    @include responsive-mobile {
+        max-width: 250px;
+        height: 200px;
+    }
+}
+
+.contenedor-horizontal .texto {
+    flex: 1;
+}
+
+.contenedor-horizontal .texto h1,
+.contenedor-horizontal .texto h2 {
+    font-size: $font-size-h2-desktop;
+    margin-bottom: 1rem;
+
+    @include responsive-tablet {
+        font-size: $font-size-h2-tablet;
+        margin-bottom: 0.75rem;
+    }
+
+    @include responsive-mobile {
+        font-size: $font-size-h2-mobile;
+        margin-bottom: 0.5rem;
+    }
+}
+
+.contenedor-horizontal .texto p {
+    font-size: $font-size-body-desktop * 1.1;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+
+    @include responsive-tablet {
+        font-size: $font-size-body-tablet;
+        margin-bottom: 0.75rem;
+    }
+
+    @include responsive-mobile {
+        font-size: $font-size-body-mobile;
+        margin-bottom: 0.5rem;
+    }
+}
+
+.contenedor-horizontal .texto button {
+    background-color: #000;
+    color: white;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include responsive-mobile {
+        width: 100%;
+        padding: 0.8rem 1.5rem;
+    }
+}
+
+.contenedor-horizontal .texto button:hover {
+    background-color: #333;
+}
+
+#newImg .imagen {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(130px, 1fr));
+    gap: $gap-grid-desktop;
+
+    @include responsive-tablet {
+        grid-template-columns: repeat(2, minmax(120px, 1fr));
+        gap: $gap-grid-tablet;
+    }
+
+    @include responsive-mobile {
+        grid-template-columns: 1fr;
+        gap: $gap-grid-mobile;
+    }
+}
+
+#newImg .imagen img {
+    width: 100%;
+    max-width: none;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+
+    @include responsive-tablet {
+        height: 150px;
+    }
+
+    @include responsive-mobile {
+        height: 120px;
+    }
+}

@@ -1,0 +1,82 @@
+@use "../varibles" as *;
+
+// ========================================
+// RESPONSIVE DESIGN - BREAKPOINTS
+// ========================================
+
+// ─────────────────────────────────────────
+// TABLET & MÓVIL (max-width: 768px)
+// ─────────────────────────────────────────
+@media (max-width: $breakpoint-tablet) {
+    nav.menu {
+        display: none;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.98);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        padding: 1rem 0;
+        text-align: center;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    }
+
+    nav.menu.show {
+        display: flex;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
+// ─────────────────────────────────────────
+// MÓVIL PURO (max-width: 576px)
+// ─────────────────────────────────────────
+@media (max-width: $breakpoint-mobile) {
+    html {
+        font-size: 14px;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    section {
+        padding: $padding-section-mobile !important;
+    }
+
+    h1 {
+        font-size: $font-size-h1-mobile !important;
+        line-height: 1.3;
+    }
+
+    h2 {
+        font-size: $font-size-h2-mobile !important;
+        line-height: 1.3;
+    }
+
+    h3 {
+        font-size: $font-size-h3-mobile !important;
+    }
+
+    p {
+        font-size: $font-size-body-mobile;
+        line-height: 1.5;
+    }
+
+    button,
+    a {
+        min-height: 44px;
+        min-width: 44px;
+    }
+}

@@ -1,0 +1,191 @@
+@use "../../varibles" as *;
+
+.catalog-section {
+    background: $color-surface;
+    color: $color-text-dark;
+    padding: $padding-section-desktop;
+
+    @include responsive-tablet {
+        padding: $padding-section-tablet;
+    }
+
+    @include responsive-mobile {
+        padding: $padding-section-mobile;
+    }
+}
+
+.section-heading {
+    width: min(1050px, 100%);
+    margin: 0 auto 2rem;
+}
+
+.section-heading h2 {
+    font-size: $font-size-h2-desktop;
+    margin-bottom: 0.6rem;
+
+    @include responsive-tablet {
+        font-size: $font-size-h2-tablet;
+    }
+
+    @include responsive-mobile {
+        font-size: $font-size-h2-mobile;
+    }
+}
+
+.section-heading p {
+    color: $color-muted-dark;
+    line-height: 1.6;
+    font-size: $font-size-body-desktop;
+
+    @include responsive-tablet {
+        font-size: $font-size-body-tablet;
+    }
+
+    @include responsive-mobile {
+        font-size: $font-size-body-mobile;
+    }
+}
+
+.catalog-controls {
+    width: min(1050px, 100%);
+    margin: 0 auto 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+
+    @include responsive-mobile {
+        gap: 0.5rem;
+    }
+}
+
+.filter-btn {
+    border: 1px solid #1e1e1e;
+    border-radius: 999px;
+    background: transparent;
+    color: #1e1e1e;
+    padding: 0.55rem 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    font-size: $font-size-body-desktop;
+
+    @include responsive-tablet {
+        font-size: $font-size-body-tablet;
+        padding: 0.5rem 0.85rem;
+    }
+
+    @include responsive-mobile {
+        font-size: 0.9rem;
+        padding: 0.45rem 0.75rem;
+    }
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+    background: #1e1e1e;
+    color: #fff;
+}
+
+.catalog-grid {
+    width: min(1050px, 100%);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(220px, 1fr));
+    gap: $gap-grid-desktop;
+
+    @include responsive-tablet {
+        grid-template-columns: repeat(2, minmax(180px, 1fr));
+        gap: $gap-grid-tablet;
+    }
+
+    @include responsive-mobile {
+        grid-template-columns: 1fr;
+        gap: $gap-grid-mobile;
+    }
+}
+
+.catalog-card {
+    background: $color-surface-card;
+    border-radius: 14px;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+
+    @include responsive-mobile {
+        padding: 0.85rem;
+    }
+}
+
+.catalog-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+
+    @include responsive-tablet {
+        height: 180px;
+    }
+
+    @include responsive-mobile {
+        height: 160px;
+    }
+}
+
+.catalog-card p {
+    color: $color-muted-dark;
+    line-height: 1.5;
+    flex: 1;
+    font-size: $font-size-body-desktop;
+
+    @include responsive-tablet {
+        font-size: $font-size-body-tablet;
+    }
+
+    @include responsive-mobile {
+        font-size: $font-size-body-mobile;
+    }
+}
+
+.catalog-card button {
+    border: none;
+    border-radius: 999px;
+    padding: 0.7rem 1rem;
+    background: #111;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+    font-size: $font-size-body-desktop;
+
+    @include responsive-mobile {
+        width: 100%;
+        font-size: 0.95rem;
+    }
+
+    &:hover {
+        background: #333;
+    }
+}
+
+.tag {
+    display: inline-block;
+    width: fit-content;
+    padding: 0.3rem 0.65rem;
+    border-radius: 999px;
+    background: #ececec;
+    font-size: 0.8rem;
+    font-weight: 700;
+
+    @include responsive-mobile {
+        font-size: 0.75rem;
+    }
+}

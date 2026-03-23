@@ -1,0 +1,19 @@
+@use "../varibles" as *;
+
+.btn-primary {
+    display: inline-block;
+    border: none;
+    border-radius: 999px;
+    padding: 0.85rem 1.4rem;
+    background: $color-primary;
+    color: $color-text-light;
+    text-decoration: none;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.btn-primary:hover {
+    background: $color-primary-hover;
+    transform: translateY(-2px);
+}

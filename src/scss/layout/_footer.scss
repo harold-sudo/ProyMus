@@ -1,0 +1,64 @@
+footer {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, #5f656c 0%, #3f454c 35%, #2f343a 70%, #1f2328 100%);
+    color: white;
+    padding: 2.5rem 2rem 1rem;
+    font-size: 0.95rem;
+    margin-top: auto;
+    border-top: 1px solid rgba(255, 255, 255, 0.14);
+    box-shadow: inset 0 18px 40px rgba(255, 255, 255, 0.08), inset 0 -25px 45px rgba(0, 0, 0, 0.45);
+}
+
+footer::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 15% 20%, rgba(255, 255, 255, 0.2), transparent 32%),
+                radial-gradient(circle at 85% 75%, rgba(255, 255, 255, 0.12), transparent 35%),
+                repeating-linear-gradient(-25deg, rgba(255, 255, 255, 0.04) 0 2px, rgba(0, 0, 0, 0.03) 2px 8px);
+    mix-blend-mode: screen;
+    opacity: 0.45;
+    pointer-events: none;
+}
+
+.footer-grid {
+    position: relative;
+    z-index: 1;
+    width: min(1200px, 100%);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(180px, 1fr));
+    gap: 1.5rem;
+}
+
+.footer-grid h3 {
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+}
+
+.footer-grid p {
+    color: #d6d6d6;
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+}
+
+.footer-grid a {
+    color: #d6d6d6;
+    text-decoration: none;
+}
+
+.footer-grid a:hover {
+    color: #fff;
+}
+
+.footer-copy {
+    position: relative;
+    z-index: 1;
+    width: min(1200px, 100%);
+    margin: 1.5rem auto 0;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+    color: #c4c4c4;
+}

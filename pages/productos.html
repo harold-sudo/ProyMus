@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Catalogo de productos deportivos multimarca en SportShop.">
+    <title>SportShop | Productos</title>
+    <link rel="stylesheet" href="../dist/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a class="logo" href="index.html">SportShop</a>
+        <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+        <nav class="menu">
+            <a href="index.html">INICIO</a>
+            <a href="productos.html" aria-current="page">PRODUCTOS</a>
+            <a href="contacto.html">CONTACTO</a>
+            <a href="index.html#sobre-nosotros">NOSOTROS</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <!-- TODO: Reemplaza con imagen banner del catalogo -->
+            <div class="page-hero__bg" style="background-image: url('../img/SONIDOS.jpg');"></div>
+            <div class="page-hero__content">
+                <h1>Catalogo Deportivo</h1>
+                <p>Selecciona por categoria y descubre accesorios, ropa y calzado para todos los niveles.</p>
+                <a class="btn-primary" href="contacto.html">Pedir asesoria</a>
+            </div>
+        </section>
+
+        <section class="catalog-section" aria-labelledby="catalogo-title">
+            <div class="section-heading">
+                <h2 id="catalogo-title">Productos y Accesorios</h2>
+                <p>Explora nuestro contenido por tipo de actividad. Usa los filtros para ver rapidamente lo que buscas.</p>
+            </div>
+
+            <div class="catalog-controls" role="toolbar" aria-label="Filtros de productos">
+                <button class="filter-btn active" type="button" data-filter="all">Todos</button>
+                <button class="filter-btn" type="button" data-filter="running">Running</button>
+                <button class="filter-btn" type="button" data-filter="gym">Gym</button>
+                <button class="filter-btn" type="button" data-filter="futbol">Futbol</button>
+                <button class="filter-btn" type="button" data-filter="outdoor">Outdoor</button>
+            </div>
+
+            <div class="catalog-grid" id="catalog-grid">
+                <article class="catalog-card" data-category="running">
+                    <!-- TODO: Reemplaza con imagen del producto de running -->
+                    <img src="../img/OIP.jpg" alt="Tenis de running velocidad">
+                    <span class="tag">Running</span>
+                    <h3>Tenis Velocity X</h3>
+                    <p>Suela de alto rebote y malla transpirable para tiradas largas.</p>
+                    <button type="button">Agregar al carrito</button>
+                </article>
+
+                <article class="catalog-card" data-category="gym">
+                    <!-- TODO: Reemplaza con imagen del producto de gym -->
+                    <img src="../img/jazz-icon-creative-design-80079934.jpg" alt="Kit de bandas elasticas">
+                    <span class="tag">Gym</span>
+                    <h3>Kit Power Bands</h3>
+                    <p>5 niveles de resistencia para fuerza, movilidad y rehabilitacion.</p>
+                    <button type="button">Agregar al carrito</button>
+                </article>
+
+                <article class="catalog-card" data-category="futbol">
+                    <!-- TODO: Reemplaza con imagen del producto de futbol -->
+                    <img src="../img/mejor+musica+pop-1920w.jpg" alt="Guayos profesionales para futbol">
+                    <span class="tag">Futbol</span>
+                    <h3>Guayos Attack Pro</h3>
+                    <p>Traccion reforzada y upper comodo para cambios de ritmo explosivos.</p>
+                    <button type="button">Agregar al carrito</button>
+                </article>
+
+                <article class="catalog-card" data-category="outdoor">
+                    <!-- TODO: Reemplaza con imagen del producto outdoor -->
+                    <img src="../img/7032cbe163889e2f146c6e8af3542721.jpg" alt="Chaqueta impermeable outdoor">
+                    <span class="tag">Outdoor</span>
+                    <h3>Chaqueta Storm Trail</h3>
+                    <p>Impermeable, cortaviento y ligera para senderismo en clima variable.</p>
+                    <button type="button">Agregar al carrito</button>
+                </article>
+
+                <article class="catalog-card" data-category="running">
+                    <!-- TODO: Reemplaza con imagen del accesorio de running -->
+                    <img src="../img/c718b5d52d27ff5da404e23f4ea4bec2.jpg" alt="Reloj deportivo con GPS">
+                    <span class="tag">Running</span>
+                    <h3>Reloj RunTrack GPS</h3>
+                    <p>Monitorea ritmo, distancia, pulsaciones y zonas de entrenamiento.</p>
+                    <button type="button">Agregar al carrito</button>
+                </article>
+
+                <article class="catalog-card" data-category="gym">
+                    <!-- TODO: Reemplaza con imagen de ropa de entrenamiento -->
+                    <img src="../img/da4c24090678de7ad141e341507a3bc3.jpg" alt="Conjunto deportivo de entrenamiento">
+                    <span class="tag">Gym</span>
+                    <h3>Set Core Training</h3>
+                    <p>Tela flexible de secado rapido para sesiones de alta intensidad.</p>
+                    <button type="button">Agregar al carrito</button>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-grid">
+            <div>
+                <h3>SportShop</h3>
+                <p>Soluciones deportivas para mejorar tu rendimiento con estilo y tecnologia.</p>
+            </div>
+            <div>
+                <h3>Contacto</h3>
+                <p>Telefono: +57 300 000 0000</p>
+                <p>Email: hola@sportshop.com</p>
+                <p>Direccion: Av. Deportiva 123, Bogota</p>
+            </div>
+            <div>
+                <h3>Atencion</h3>
+                <p>Lunes a viernes: 9:00 AM - 7:00 PM</p>
+                <p>Sabados: 10:00 AM - 5:00 PM</p>
+                <p>Envios nacionales en 24 a 72 horas.</p>
+            </div>
+            <div>
+                <h3>Enlaces</h3>
+                <p><a href="index.html">Home</a></p>
+                <p><a href="productos.html">Catalogo</a></p>
+                <p><a href="contacto.html">Contacto</a></p>
+            </div>
+        </div>
+        <div class="footer-copy">© 2026 SportShop. Todos los derechos reservados.</div>
+    </footer>
+
+    <script src="../scripts/script.js"></script>
+    <button class="back-to-top" type="button" aria-label="Volver arriba">↑</button>
+</body>
+</html>

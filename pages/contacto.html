@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contacto y formulario de atencion para clientes SportShop.">
+    <title>SportShop | Contacto</title>
+    <link rel="stylesheet" href="../dist/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a class="logo" href="index.html">SportShop</a>
+        <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+        <nav class="menu">
+            <a href="index.html">INICIO</a>
+            <a href="productos.html">PRODUCTOS</a>
+            <a href="contacto.html" aria-current="page">CONTACTO</a>
+            <a href="index.html#sobre-nosotros">NOSOTROS</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero page-hero--short">
+            <!-- TODO: Reemplaza con imagen banner de contacto -->
+            <div class="page-hero__bg" style="background-image: url('../img/generos-musicales.jpg');"></div>
+            <div class="page-hero__content">
+                <h1>Estamos para ayudarte</h1>
+                <p>Escribenos y recibe asesoria para encontrar tu equipamiento ideal.</p>
+            </div>
+        </section>
+
+        <section class="contact-section" aria-labelledby="contacto-title">
+            <article class="contact-form-card">
+                <h2 id="contacto-title">Formulario de Contacto</h2>
+                <p>Completa tus datos y te responderemos en menos de 24 horas.</p>
+
+                <form id="contact-form" novalidate>
+                    <div class="input-group">
+                        <label for="nombre">Nombre completo</label>
+                        <input id="nombre" name="nombre" type="text" required minlength="3" aria-describedby="nombre-help">
+                        <small id="nombre-help">Minimo 3 caracteres.</small>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="email">Correo electronico</label>
+                        <input id="email" name="email" type="email" required aria-describedby="email-help">
+                        <small id="email-help">Ejemplo: nombre@correo.com</small>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="telefono">Telefono</label>
+                        <input id="telefono" name="telefono" type="tel" required pattern="[0-9+\-\s]{7,15}" aria-describedby="telefono-help">
+                        <small id="telefono-help">Solo numeros, espacios, + o guion.</small>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="interes">Categoria de interes</label>
+                        <select id="interes" name="interes" required>
+                            <option value="">Selecciona una opcion</option>
+                            <option value="running">Running</option>
+                            <option value="gym">Gym</option>
+                            <option value="futbol">Futbol</option>
+                            <option value="outdoor">Outdoor</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" required minlength="10"></textarea>
+                    </div>
+
+                    <button class="btn-primary" type="submit">Enviar mensaje</button>
+                    <p class="form-feedback" id="form-feedback" role="status" aria-live="polite"></p>
+                </form>
+            </article>
+
+            <article class="contact-info-card" aria-label="Informacion de contacto">
+                <h3>Informacion final</h3>
+                <p><strong>Telefono:</strong> +57 300 000 0000</p>
+                <p><strong>Email:</strong> hola@sportshop.com</p>
+                <p><strong>Direccion:</strong> Av. Deportiva 123, Bogota</p>
+                <p><strong>Horario:</strong> Lun - Vie 9:00 AM a 7:00 PM / Sab 10:00 AM a 5:00 PM</p>
+
+                <div class="map-card" aria-label="Mapa ficticio de ubicacion">
+                    <h4>Ubicacion (Mapa ficticio)</h4>
+                    <p>SportShop Center, Zona Norte, Bogota.</p>
+                    <!-- TODO: Reemplaza este bloque por una imagen o iframe del mapa real -->
+                    <div class="map-placeholder">MAPA FICTICIO</div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-grid">
+            <div>
+                <h3>SportShop</h3>
+                <p>Tu comunidad deportiva multimarca: entrenamiento, rendimiento y estilo en un solo lugar.</p>
+            </div>
+            <div>
+                <h3>Contacto</h3>
+                <p>Telefono: +57 300 000 0000</p>
+                <p>Email: hola@sportshop.com</p>
+                <p>Direccion: Av. Deportiva 123, Bogota</p>
+            </div>
+            <div>
+                <h3>Atencion</h3>
+                <p>Lunes a viernes: 9:00 AM - 7:00 PM</p>
+                <p>Sabados: 10:00 AM - 5:00 PM</p>
+                <p>Envios nacionales en 24 a 72 horas.</p>
+            </div>
+            <div>
+                <h3>Enlaces</h3>
+                <p><a href="index.html">Home</a></p>
+                <p><a href="productos.html">Catalogo</a></p>
+                <p><a href="contacto.html">Contacto</a></p>
+            </div>
+        </div>
+        <div class="footer-copy">© 2026 SportShop. Todos los derechos reservados.</div>
+    </footer>
+
+    <script src="../scripts/script.js"></script>
+    <button class="back-to-top" type="button" aria-label="Volver arriba">↑</button>
+</body>
+</html>

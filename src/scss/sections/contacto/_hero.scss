@@ -1,0 +1,13 @@
+@use "../../varibles" as *;
+
+.page-hero--short {
+    min-height: 45vh;
+
+    @include responsive-tablet {
+        min-height: 35vh;
+    }
+
+    @include responsive-mobile {
+        min-height: 28vh;
+    }
+}

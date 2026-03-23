@@ -1,0 +1,62 @@
+@use "../../varibles" as *;
+
+.page-hero {
+    position: relative;
+    min-height: 60vh;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+
+    @include responsive-tablet {
+        min-height: 45vh;
+    }
+
+    @include responsive-mobile {
+        min-height: 35vh;
+    }
+}
+
+.page-hero__bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.55);
+}
+
+.page-hero__content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    width: min(900px, 92%);
+}
+
+.page-hero__content h1 {
+    font-size: $font-size-h1-desktop;
+    margin-bottom: 1rem;
+
+    @include responsive-tablet {
+        font-size: $font-size-h1-tablet;
+        margin-bottom: 0.75rem;
+    }
+
+    @include responsive-mobile {
+        font-size: $font-size-h1-mobile;
+        margin-bottom: 0.5rem;
+    }
+}
+
+.page-hero__content p {
+    font-size: $font-size-body-desktop * 1.1;
+    margin-bottom: 1.5rem;
+
+    @include responsive-tablet {
+        font-size: $font-size-body-tablet;
+        margin-bottom: 1rem;
+    }
+
+    @include responsive-mobile {
+        font-size: $font-size-body-mobile;
+        margin-bottom: 0.75rem;
+    }
+}

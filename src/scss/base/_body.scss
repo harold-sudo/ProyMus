@@ -1,0 +1,9 @@
+@use "../varibles" as *;
+
+body {
+    background: $color-bg-dark;
+    color: $color-text-light;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
