@@ -105,34 +105,67 @@
     background-color: #333;
 }
 
+#newImg.contenedor-horizontal {
+    min-height: auto;
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: rgba(32, 32, 32, 0.75);
+    border-radius: 14px;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.35);
+}
+
+#newImg .texto {
+    text-align: center;
+}
+
+#newImg .texto h2,
+#newImg .texto p {
+    color: #fff;
+}
+
 #newImg .imagen {
     display: grid;
-    grid-template-columns: repeat(2, minmax(130px, 1fr));
-    gap: $gap-grid-desktop;
-
-    @include responsive-tablet {
-        grid-template-columns: repeat(2, minmax(120px, 1fr));
-        gap: $gap-grid-tablet;
-    }
-
-    @include responsive-mobile {
-        grid-template-columns: 1fr;
-        gap: $gap-grid-mobile;
-    }
+    grid-template-columns: repeat(2, minmax(120px, 1fr));
+    gap: 1rem;
+    align-items: center;
+    justify-items: center;
 }
 
 #newImg .imagen img {
     width: 100%;
-    max-width: none;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 10px;
+    max-width: 180px;
+    max-height: 90px;
+    object-fit: contain;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.16);
+    padding: 0.8rem;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
+    transition: transform 0.25s ease, filter 0.25s ease, box-shadow 0.25s ease;
+    filter: grayscale(0.15);
+}
 
-    @include responsive-tablet {
-        height: 150px;
+#newImg .imagen img:hover {
+    transform: translateY(-3px) scale(1.03);
+    filter: grayscale(0);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.45);
+}
+
+@include responsive-tablet {
+    #newImg .imagen {
+        grid-template-columns: repeat(2, minmax(130px, 1fr));
+        gap: 0.9rem;
+    }
+}
+
+@include responsive-mobile {
+    #newImg .imagen {
+        grid-template-columns: 1fr;
+        gap: 0.7rem;
     }
 
-    @include responsive-mobile {
-        height: 120px;
+    #newImg .imagen img {
+        max-height: 80px;
+        padding: 0.7rem;
     }
 }
