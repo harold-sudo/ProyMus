@@ -836,6 +836,63 @@ footer::before {
   background-color: #333;
 }
 
+#contacto.contenedor-horizontal {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  border-radius: 0;
+  min-height: 430px;
+  align-items: center;
+  background-image: linear-gradient(110deg, rgba(0, 0, 0, 0.82) 15%, rgba(0, 0, 0, 0.6) 55%, rgba(0, 0, 0, 0.75) 100%), url("../../img/grupo-de-personas-deportivas-1.jpg");
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.35);
+}
+
+#contacto .texto {
+  max-width: 620px;
+  position: relative;
+  z-index: 1;
+}
+
+#contacto .texto h2,
+#contacto .texto p {
+  color: #fff;
+}
+
+#contacto .texto button {
+  margin-top: 0.8rem;
+  background: linear-gradient(135deg, #f8f8f8 0%, #cbcbcb 100%);
+  color: #111;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+#contacto .texto button:hover {
+  background: linear-gradient(135deg, #ffffff 0%, #e6e6e6 100%);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  #contacto.contenedor-horizontal {
+    min-height: 360px;
+    margin: 0;
+    border-radius: 0;
+  }
+  #contacto .texto {
+    max-width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  #contacto.contenedor-horizontal {
+    min-height: 320px;
+    margin: 0;
+    border-radius: 0;
+  }
+}
 #newImg.contenedor-horizontal {
   min-height: auto;
   max-width: 1100px;
@@ -857,35 +914,56 @@ footer::before {
 
 #newImg .imagen {
   display: grid;
-  grid-template-columns: repeat(2, minmax(120px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(2, minmax(210px, 1fr));
+  gap: 1.3rem;
   align-items: center;
   justify-items: center;
 }
 
-#newImg .imagen img {
+#newImg .marca-card {
   width: 100%;
-  max-width: 180px;
-  max-height: 90px;
+  min-height: 160px;
+  padding: 1.2rem;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.24), rgba(255, 255, 255, 0.08));
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.32);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+#newImg .marca-card img {
+  width: 100%;
+  max-width: 240px;
+  max-height: 120px;
   object-fit: contain;
-  border-radius: 12px;
-  background: rgba(255, 255, 255, 0.16);
-  padding: 0.8rem;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
-  transition: transform 0.25s ease, filter 0.25s ease, box-shadow 0.25s ease;
+  transition: transform 0.25s ease, filter 0.25s ease;
   filter: grayscale(0.15);
 }
 
-#newImg .imagen img:hover {
-  transform: translateY(-3px) scale(1.03);
+#newImg .marca-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.4);
+}
+
+#newImg .marca-card:hover img {
+  transform: scale(1.05);
   filter: grayscale(0);
-  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.45);
 }
 
 @media (max-width: 768px) {
   #newImg .imagen {
-    grid-template-columns: repeat(2, minmax(130px, 1fr));
+    grid-template-columns: repeat(2, minmax(170px, 1fr));
     gap: 0.9rem;
+  }
+  #newImg .marca-card {
+    min-height: 140px;
+  }
+  #newImg .marca-card img {
+    max-width: 210px;
+    max-height: 100px;
   }
 }
 @media (max-width: 576px) {
@@ -893,9 +971,13 @@ footer::before {
     grid-template-columns: 1fr;
     gap: 0.7rem;
   }
-  #newImg .imagen img {
-    max-height: 80px;
-    padding: 0.7rem;
+  #newImg .marca-card {
+    min-height: 125px;
+    padding: 1rem;
+  }
+  #newImg .marca-card img {
+    max-width: 190px;
+    max-height: 85px;
   }
 }
 .page-hero {
@@ -1373,5 +1455,3 @@ footer::before {
     font-size: 0.9rem;
   }
 }
-
-/*# sourceMappingURL=main.css.map */
